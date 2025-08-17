@@ -35,3 +35,50 @@ function toggleTheme(){
         localStorage.theme = 'light'
     }
 }
+
+
+
+    const webSkills = ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Git", "MySQL"];
+    const problemPlatforms = [
+        { name: "LeetCode", link: "https://leetcode.com/u/namangupta123/" },
+        { name: "Geeks for Geeks", link: "https://www.geeksforgeeks.org/user/guptanam5je8/" },
+        { name: "HackerRank", link: "https://www.hackerrank.com/profile/guptanamang119" }
+    ];
+
+    function openModal(type) {
+        const modal = document.getElementById('modal');
+        const title = document.getElementById('modal-title');
+        const content = document.getElementById('modal-content');
+        content.innerHTML = ""; // clear previous content
+
+        if(type === 'web') {
+            title.textContent = "Web Development Skills";
+            webSkills.forEach(skill => {
+                const div = document.createElement('div');
+                // div.className = "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white rounded-lg p-2 text-center";
+                div.className = "bg-transparent dark:bg-transparent dark:border text-gray-800 dark:text-white rounded-lg p-2 text-center hover:bg-white dark:hover:bg-white dark:hover:text-black";
+                div.textContent = skill;
+                content.appendChild(div);
+            });
+        } else if(type === 'problem') {
+            title.textContent = "Problem Solving Platforms";
+            problemPlatforms.forEach(platform => {
+                const a = document.createElement('a');
+                a.href = platform.link;
+                a.target = "_blank";
+                a.rel = "noopener noreferrer";
+                a.className = "bg-transparent dark:bg-transparent dark:border text-gray-800 dark:text-white rounded-lg p-2 text-center hover:bg-white dark:hover:bg-white dark:hover:text-black";
+                a.textContent = platform.name;
+                content.appendChild(a);
+            });
+        }
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+    }

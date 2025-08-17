@@ -171,46 +171,96 @@
 
 
 <!-- -------------------Services Section---------------------------- -->
-
+<!--
 <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-    <h4 class="text-center mb-2 text-lg font-Ovo">What I offer</h4>
-    <h2 class="text-center text-5xl font-Ovo">My services</h2>
+    <h4 class="text-center mb-2 text-lg font-Ovo">My Abilities</h4>
+    <h2 class="text-center text-5xl font-Ovo">My Skills</h2>
     <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Motivated Computer Science Enthusiast with a foundation in web development, data management, and software programming. Skilled in Java, JavaScript, and SQL, with a keen interest in building intuitive and efficient solutions.</p>
 
-    <div class="grid grid-cols-4 gap-6 my-10 mx-auto w-full">
+     <div class="grid grid-cols-4 gap-6 my-10 mx-auto w-full">
         <div></div>
         <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
             <img src="./images/web-icon.png" alt="" class="w-10">
-            <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Design</h3>
+            <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Development</h3>
             <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming...</p>
             <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a>
         </div>
-        <!-- <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
             <img src="./images/mobile-icon.png" alt="" class="w-10">
             <h3 class="text-lg my-4 text-gray-700 dark:text-white">Mobile App</h3>
             <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming...</p>
             <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a>
         </div> -->
-        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+        <!-- <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
             <img src="./images/ui-icon.png" alt="" class="w-10">
             <h3 class="text-lg my-4 text-gray-700 dark:text-white">UI/UX Design</h3>
             <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming...</p>
             <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a>
-        </div>
+        </div> -->
         <!-- <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
             <img src="./images/graphics-icon.png" alt="" class="w-10">
             <h3 class="text-lg my-4 text-gray-700 dark:text-white">Graphics Design</h3>
             <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming...</p>
             <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="./images/right-arrow.png" alt="" class="w-4"></a>
         </div> -->
+    <!-- </div>
+</div> -->
+
+
+
+<div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg font-Ovo">My Abilities</h4>
+    <h2 class="text-center text-5xl font-Ovo">My Skills</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+        Motivated Computer Science Enthusiast with a foundation in web development, data management, and software programming. Skilled in Java, JavaScript, and SQL, with a keen interest in building intuitive and efficient solutions.
+    </p>
+
+    <div class="grid grid-cols-4 gap-6 my-10 mx-auto w-full">
+        <div></div>
+
+        <!-- Web Development Card -->
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+            <img src="./images/web-icon.png" alt="" class="w-10">
+            <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Development</h3>
+            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Web development is the process of building, programming...</p>
+            <button onclick="openModal('web')" class="flex items-center gap-2 text-sm mt-5">
+                Read more <img src="./images/right-arrow.png" alt="" class="w-4">
+            </button>
+        </div>
+
+        <!-- Problem Solving Card -->
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+            <img src="./images/ui-icon.png" alt="" class="w-10">
+            <h3 class="text-lg my-4 text-gray-700 dark:text-white">Problem Solving</h3>
+            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Problem solving using competitive programming platforms...</p>
+            <button onclick="openModal('problem')" class="flex items-center gap-2 text-sm mt-5">
+                Read more <img src="./images/right-arrow.png" alt="" class="w-4">
+            </button>
+        </div>
     </div>
 </div>
+
+
+
+
+<!-- Modal Overlay -->
+<div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+    <div class="bg-white dark:darkTheme dark:bg-darkTheme rounded-lg p-8 max-w-lg w-full relative">
+        <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 dark:hover:text-white">✖</button>
+        <h2 id="modal-title" class="text-2xl font-bold mb-5 text-gray-800 dark:text-white"></h2>
+        <div id="modal-content" class="grid grid-cols-2 gap-4"></div>
+    </div>
+</div>
+
+
+
 
 <!-- -----------------------------my work--------------------------------- -->
 
 <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
     <h4 class="text-center mb-2 text-lg font-Ovo">My Portfolio</h4>
-    <h2 class="text-center text-5xl font-Ovo">My latest work</h2>        
+    <!-- <h2 class="text-center text-5xl font-Ovo">My latest work</h2>         -->
+    <h2 class="text-center text-5xl font-Ovo">My work</h2>        
     <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
 
     <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
